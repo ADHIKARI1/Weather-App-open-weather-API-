@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Weather App - Forcast</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="forcast.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  </head>
+  <body>
+    <nav class= "nav navbar-default" id="nav_bar">
+      <div class="container"> 
+      <div class = "navbar-header">
+        <button type="button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>         
+        <a href="#" class="navbar-brand navbar-link weather">
+        <img src="images/logo.png" class="img-responsive" id="logo" alt="weather-logo"><strong>Weather App</strong>
+        </a>
+      </div> 
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="nav navbar-nav navbar-right" id="navbar_list">
+          <li><a href="current.html">Current</a></li>
+          <li><a href="forcast.html">Forcast</a></li>
+          <li><a href="http://www.openweathermap.org" target="_blank">Open Weather Map</a></li>
+        </ul>
+      </div>      
+    </div>      
+    </nav> 
+    
+    <div class="jumbotron" style="margin-bottom:0px; background-color:#4aa1f3; color:white">
+            <h2 class="h1 text-center" style="font-size:40px; font-weight:600">Get Weather Forcast</h2>
+    </div>
+
+    <div class ="container" style="height:1350px;">
+      <div class="row" >
+        <div class="col-md-12">
+          <h3 class="text-center text-primary">Enter City Name</h3>
+           <div id="error" ></div>
+        </div>
+        <div class="row form-group form-inline" id="cityDiv" >
+          <input type="text" id="city" name="city" class="form-control" placeholder="Enter City Name">
+          <input type="text" id="days" name="days" class="form-control" placeholder="Number : Min-1 & Max-16">
+          <button id = "btnForcast" class="btn btn-primary"> Search City</button>       
+        </div>   
+    </div>
+
+    <div class="row" style="margin-top:20px;">
+      <table class="table table-bordered">
+        <div id="header" class="text-center"></div>
+        <thead>
+          <tr>
+            <th>Icon</th>
+            <th>Weather</th>
+            <th>Description</th>
+            <th>Morning Temperature</th>
+            <th>Night Temperature</th>
+            <th>Min. Temperature</th>
+            <th>Max. Temperature</th>
+            <th>Preasure</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+            <th>Wind Direction</th>
+          </tr>
+        </thead>
+        <tbody id="forcastWeather">
+        </tbody>
+      </table>
+     </div>
+
+     </div> 
+     
+ 
+  <div class="footer">
+    <div class="container">
+      <div class="row text-center" style="padding-top:30px">
+        <p style="color:white">Copy &copy; Weather App</p>
+      </div>
+    </div>
+  </div>
+
+
+
+       
+  </body>
+</html>

@@ -1,0 +1,119 @@
+body{
+	font-family: 'Tangerine' serif;
+	background-color: #ffffff;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_bar{
+	margin-bottom: 0px;
+	padding: 0;
+	background-color:white;
+}
+
+.weather{
+	font-size: 25px;
+	font-weight: 600;
+	color: #4aa1f3 !important;
+}
+
+#navbar_list > li > a{
+	color: #4aa1f3 !important;
+	font-weight: 500;
+}
+
+#logo{
+	max-height: 52px ;
+	margin-right: 8px;
+	display: inline-block;
+	margin-top: -17px;
+}
+
+#row_head{
+	background: url(images/bg.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 450px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#col_header_text_1{
+	color: #ffffff;
+	padding-top: 50px;
+	font-size: 50px;
+}
+
+#col_header_text_2{
+	color: #ffffff;
+	padding-top: 20px;
+	font-size: 30px;
+}
+
+ul#list_items{
+	color: #ffffff;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 35px;
+	
+}
+
+#cityDiv{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+input[type='text']{
+	height: 40px;
+	font-size: 20px;
+}
+
+#btnSubmit{
+	height: 40px;
+	font-size: 15px;
+	font-weight: bold;
+}
+/*
+read API doc
+http://api.openweathermap.org/data/2.5/weather?q=London&APPID=9b5bfdc42b18a8d58f5de9456ca778ac 
+*/
+
+#errorCity{
+	margin: 20px auto;
+	text-align: center;
+	width: 50%;
+
+}
+
+.footer{
+	background-color: #4aa1f3;
+	width: 100%;
+	height: 80px;
+	margin-top: 5px;
+	bottom: 0;
+}
+#show_weather{1
+	width: 60%;
+	margin: auto;
+	background-color: #4aa1f3;
+	color: white;
+	border-radius: 25px;
+}
+
+table{
+	color: #333333;
+	font-family: Helvetical, Arial, sans-serif;
+}
+th{
+	background: #4aa1f3;
+	font-weight: bold;
+	font-size: 18px;
+	color:white;
+}
+td{
+	background: #FAFAFA;
+	text-align: center;
+	font-size: 16px;
+}

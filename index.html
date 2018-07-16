@@ -1,0 +1,99 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+	
+  </head>
+  <body>
+    <nav class= "nav navbar-default" id="nav_bar">
+      <div class="container"> 
+      <div class = "navbar-header">
+        <button type="button" class = "navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>         
+        <a href="#" class="navbar-brand navbar-link weather">
+        <img src="images/logo.png" class="img-responsive" id="logo" alt="weather-logo"><strong>Weather App</strong>
+        </a>
+      </div> 
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="nav navbar-nav navbar-right" id="navbar_list">
+          <li><a href="current.html">Current</a></li>
+          <li><a href="forcast.html">Forcast</a></li>
+          <li><a href="">Open Weather Map</a></li>
+        </ul>
+      </div>      
+    </div>      
+    </nav>
+    <div class ="row" id="row_head">
+      <div class="col-md-12" id="col_text">
+        <h1 class="h1 text-center" id="col_header_text_1">The most simplest weather app.</h1>
+        <h2 class="h2 text-center" id="col_header_text_2">Get weather information of any city.</h2> 
+        <ul class="list-inline" id="list_items">
+          <li>Temperature</li>
+          <li>Humidity</li>
+          <li>Preasure</li>
+          <li>Windspeed</li>
+        </ul>       
+      </div>
+    </div>
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center text-primary">Welcome To Samitha's Weather App</h2>
+          <p class="text-center" id="wecome-paragraph">Samitha's weather app is a web-based application that allows users to search for current weather information as well as weather forecast of different cities around the world. Users can search for weather information by city name. Eddie's weather app uses the openweathermap API which is found at www.openweathermap.org</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row" id="row_div">
+      <div class="col-md-4" id="col_desc">
+        <div class="info-icon"><i class="fa fa-sun-o"></i></div>
+        <h3 class="text-center">Weather API</h3>
+        <p class="text-center">
+          Use openweathermap API to get weather information of any city.
+        </p>
+      </div>
+    </div>
+    <div class="row" id="row_div">
+      <div class="col-md-4" id="col_desc">
+        <div class="info-icon"><i class="fa fa-sun-o"></i></div>
+        <h3 class="text-center">Weather API</h3>
+        <p class="text-center">
+          Use openweathermap API to get weather information of any city.
+        </p>
+      </div>
+    </div>
+    <div class="row" id="row_div">
+      <div class="col-md-4" id="col_desc">
+        <div class="info-icon"><i class="fa fa-search"></i></div>
+        <h3 class="text-center">Search</h3>
+        <p class="text-center">
+          Search for current weather information and weather forecast.
+        </p>
+      </div>
+    </div>
+    <div class="row" id="row_div">
+      <div class="col-md-4" id="col_desc">
+        <div class="info-icon"><i class="fa fa-chevron-circle-down"></i></div>
+        <h3 class="text-center">View Result</h3>
+        <p class="text-center">
+          Get information about temperature, pressure, humidity etc.
+        </p>
+      </div>
+    </div>
+  	   
+  </body>
+</html>
